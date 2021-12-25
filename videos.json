@@ -14,13 +14,6 @@
  "info": "A very Brief Introduction into web development and design."
 },
  {
- "inp": "24",
- "out" : "https://www.dropbox.com/s/jb8pw775q7m45x4/01%20-%20Course%20Introduction.mov?raw=1",
- "day" : 0,
- "title": "Introduction",
- "info": "A very Brief Introduction into web development and design."
-},
- {
  "inp": "26",
  "out" : "https://www.dropbox.com/s/w5zaz0kf0riyg74/day%201%20-%20your%20first%20web%20page.mov?raw=1",
  "day" : "1",
