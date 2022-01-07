@@ -71,17 +71,84 @@
   div{
    margin: 10px 0;
   }
+  #video_list{
+   width:100%;
+   height: 45px;
+   background:gold;
+   font-size :25px;
+   font-weight: 800;
+   padding: 2px 10px;
+   box-shadow: 1px 0px 2px royalblue;
+   border-bottom-right-radius:20px;
+   border-bottom-left-radius:20px;
+  }
+  #Today{
+   height: 10vh;
+   padding : 10px;
+   color: royalblue;
+   font-size: 16px;
+   font-weight: 700;
+   border: 1px black dotted;
+   }
+   @media screen and (min-width : 500px){
+      #Today{
+   height: 5vh;
+   padding : 10px;
+   color: royalblue;
+   font-size: 16px;
+   font-weight: 700;
+   border: 1px black dotted;
+   }
+
+   }
  </style>
 </head>
 
 <body id="body">
+ <select id="video_list">
+  <option value="7">01 - Introduction</option>
+  <option value="8">02 - Introduction</option>
+ <option value="9">03 - Introduction Finding A Proper Code editor</option>
+  <option value="10"> Day 01 - Overview - 01</option>
+  <option value="11"> Day 02 - Overview - 02</option>
+  <option value="12"> Day 03 - Overview - 03</option>
+  <option value="13"> Day 04 - Fundamentals Of HTML - 01</option>
+  <option value="14"> Day 05 - Fundamentals of HTML - 02</option>
+  <option value="15"> Day 06 - Fundamentals of HTML - 03</option>
+  <option value="16"> Day 07 - Fundamentals of HTML - 04</option>
+  <option value="17"> Day 08 - Fundamentals of HTML - 05</option>
+  <option value="18"> Day 09 - Metadata and the Document Head - 01</option>
+  <option value="19"> Day 10 - Metadata and the Document Head - 02</option>
+  <option value="20"> Day 11 - Text - 01</option>
+  <option value="21"> Day 12 - Text - 02</option>
+  <option value="22"> Day 13 - Text - 03</option>
+  <option value="23"> Day 14 - Text - 04</option>
+  <option value="24"> Day 15 - Text - 05</option>
+  <option value="25"> Day 16 - Text - 06</option>
+  <option value="26"> Day 17 - Text - 07</option>
+  <option value="27"> Day 18 - Text - 08</option>
+  <option value="28"> Day 19 - Text - 09</option>
+  <option value="29"> Day 20 - Image - 01</option>
+  <option value="30"> Day 21 - Link - 01</option>
+  <option value="31"> Day 22 - Link - 02</option>
+  <option value="01"> Day 23 - Link - 03</option>
+  <option value="02"> Day 24 - Link - 04</option>
+  <option value="03"> Day 25 - List - 01</option>
+  <option value="04"> Day 26 - List - 02</option>
+  <option value="05"> Day 27 - Project - 00</option>
+  <option value="06"> Day 28 - Goodbye - 00</option>
+  <option value="16"></option>
+ </select>
  <section id="player-cont">
   <div id="player">
    <video poster="./MegaBrain/Logo.jpg" preload='auto' controls controlsList="nodownloads" id="my-vid">
-    <source id="video" src="" type="video/mov">
+    <source id="video" src= type="video/mov">
    </video>
-   <button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
-  </div>
+  <div id="Today">
+    <button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
+
+  </div> 
+ </div>
   <div id="lecture_info">
    <h2 id="lecture_title">
     Introduction
@@ -112,37 +179,75 @@
     vid.msRequestFullscreen();
    }
   }
-  var OBJ = fetch('./videos.json')
+  
+var list =  document.querySelector("#video_list");
+ list.addEventListener("change", ()=>{
+   fetch('./json/videos.json')
    .then(
     data => data.json()
    )
    .then(
-    res => {
-     var date = new Date();
-     var day = date.getUTCDate();
+     res =>{
+ var video_obj = res.filter(vids => vids.inp === list.value);
+  var date = new Date();
+  var day = date.getUTCDate();
+  console.log(video_obj[0].inp, day)
+if(video_obj[0].inp <= day){
+      vid.src = video_obj[0].out;
+   title.innerHTML = video_obj[0].title;
+   info.innerHTML = 'Day : ' + video_obj[0].day+'<br/><br/>'+video_obj[0].info;
+}
+else{
+ alert('Lecture Not Available yet')
+}
 
-     function updateVid(day) {
-      res.forEach(
-       video_obj => {
-        if (video_obj.inp == day) {
-         console.log("loaded");
-         vid.src = video_obj.out;
-         title.innerHTML = video_obj.title;
-         info.innerHTML = 'Day : ' + video_obj.day+'<br/><br/>'+video_obj.info;
-        }
-       }
-      )
+    }
+) }
+ );
+ 
+ window.onload = ()=>{
+ var OBJ = fetch('./json/videos.json')
+   .then(
+    data => data.json()
+   )
+   .then(
+ res => {
+  var date = new Date();
+  var day = date.getUTCDate();
+ var play = res.filter(vid => vid.inp == day);
+  console.log(play);
+  vid.src = play[0].out;
+   title.innerHTML = play[0].title;
+         info.innerHTML = 'Day : ' + play[0].day+'<br/><br/>'+play[0].info;
      }
-     updateVid(day);
-    });
-
+      )
+ }
+ 
   document.querySelector('body').addEventListener('contextmenu',
   () =>
    alert("This video does not belong to Megabrain, You cannot save this video for copyright reasons. Sorry about that.")
    );
 
+   (()=>{
+ var date = new Date()
+ var day = date.getDate();
+ Today.innerHTML += `Web Development and Design Day ( ${day < 10 ? '00' : day < 19 ? '0' + (day - 9) : day - 9 } )`;
+     })()
 
   /*  window.onload = function() {
+  
+
+
+
+   vid.src = video_obj.out;
+   title.innerHTML = video_obj.title;
+   info.innerHTML = 'Day : ' + video_obj.day+'<br/><br/>'+video_obj.info;
+ 
+ 
+ 
+
+
+
      var OBJ = fetch('./videos.json')
       .then(
        data => data.json()
