@@ -1,0 +1,221 @@
+[
+ {
+ "inp": "7",
+"out" : "https://www.dropbox.com/s/j017hxsggvhwlmy/01-intro-Welcome.mov?raw=1",
+ "day" : 0,
+ "title": "01-Introduction",
+ "info": "A Welcoming Intro"
+},
+ {
+ "inp": "8",
+"out" : "https://www.dropbox.com/s/4yojo6ii1lmzbso/02-intro-what%20you%20need%20to%20know%20about%20this%20course.mov?raw=1",
+ "day" : "0",
+ "title": "02-Introduction",
+ "info": "What you need to know About this Course"
+},
+ {
+ "inp": "9",
+"out" : "2",
+ "day" : "0",
+ "title": "Finding A Proper code Editor",
+ "info": "Code Editor: <div><b>Android |</b> For Android Users i would recommend you use <a href='#'>Spck Editor</a>, But still Anwritter should be a good start, there are others android versions of Editor like, Acode, sublime etc.... </div> <div><b>Laptop / Pc |</b> For Laptop and Pc Users i would recommend you use <a href='#'>VSCODE (Visual Studio Code</a>, But still they are many other good Editors like Brackets, Acode, sublime etc...."
+},
+ {
+ "inp": "10",
+"out" : "https://www.dropbox.com/s/z5aa9y2ismc68s4/01%20-%20What%20is%20HTML.mov?dl=0",
+ "day" : "1",
+"title": "Overview",
+ "info": "<code> What is Html {Hyper Text Mockup Language}</code>"
+},
+ {
+ "inp": "11", 
+"out" : "https://www.dropbox.com/s/9tnpnhhry074rp0/02%20-%20examining%20the%20structure%20of%20an%20html%20document.mov?dl=0",
+ "day" : "2",
+ "title": "Overview",
+ "info": "Examining the Structure of an HTML Document"
+},
+ {
+ "inp": "12",
+"out" : "https://www.dropbox.com/s/xtjmjpzic2grhs8/03%20-%20understanding%20tags%20and%20containers.mov?dl=0",
+ "day" : "3",
+ "title": "Overview",
+ "info": "Understanding Tags and Container."
+},
+ {
+ "inp": "13",
+"out" : "https://www.dropbox.com/s/fak257xgdds7umr/01%20-%20understanding%20whitespace%20and%20comments.mov?dl=0",
+ "day" : "4",
+ "title": "Fundamentals of Html",
+ "info": "Understanding Whitespace and Comments."
+},
+ {
+ "inp": "14",
+"out" : "https://www.dropbox.com/s/npehjt5ymwsmfh4/02%20-%20displaying%20text%20with%20paragraphs.mov?dl=0",
+ "day" : "5",
+ "title": "Fundamentals of HTML",
+ "info": "Displaying Text with Paragraphs"
+},
+ {
+ "inp": "15",
+"out" : "https://www.dropbox.com/s/mwkaamwksids0ho/03%20-%20applying%20style.mov?dl=0",
+ "day" : "6",
+ "title": "Fundamentals of Html",
+ "info": "Applying Style"
+},
+ {
+ "inp": "16",
+"out" : "https://www.dropbox.com/s/3qrlif0vgvc0git/04%20-%20using%20block%20and%20inline%20tags.mov?dl=0",
+ "day" : "7",
+ "title": "Fundamentals of Html",
+ "info": "Using Block and Inline Tags"
+},
+ {
+ "inp": "17",
+"out" : "https://www.dropbox.com/s/ctz5nyisybd6rr9/05%20-%20displaying%20characters%20with%20references.mov?dl=0",
+ "day" : "8",
+ "title": "Fundamentals of Html",
+ "info": "Displaying Characters with References"
+},
+ {
+ "inp": "18",
+"out" : "https://www.dropbox.com/s/m9baong3966t5nu/01%20-%20exploring%20the%20front%20matter%20of%20html.mov?dl=0",
+ "day" : "9",
+ "title": "Metadata and the Document Head",
+ "info": "Exploring the Front Matter of Html"
+},
+ {
+ "inp": "19",
+"out" : "https://www.dropbox.com/s/oi943kmn0mqonap/02%20-%20applying%20css%20to%20your%20document.mov?dl=0",
+ "day" : "10",
+ "title": "Metadata and the Document Head",
+ "info": "Applying CSS to your document"
+},
+ {
+ "inp": "20",
+"out" : "https://www.dropbox.com/s/0yab64svyok81ib/01%20-%20controlling%20line%20breaks%20and%20spaces.mov?dl=0",
+ "day" : "11",
+ "title": "Text",
+ "info": "Controlling Line breaks and spaces"
+},
+ {
+ "inp": "21",
+"out" : "https://www.dropbox.com/s/nsaalzpdvyh4121/02%20-%20exploring%20phrase%20elements.mov?dl=0",
+ "day" : "13",
+ "title": "Text",
+ "info": "Exploring Phase elements"
+},
+ {
+ "inp": "22",
+"out" : "https://www.dropbox.com/s/g829i1y3xhssux3/03%20-%20using%20font%20markup%20elements.mov?dl=0",
+ "day" : "14",
+ "title": "Text",
+ "info": "Using font markup elements"
+},
+ {
+ "inp": "23",
+"out" : "https://www.dropbox.com/s/fvqj6xqflg1gt4w/04%20-%20highlighting%20text%20with%20mark.mov?dl=0",
+ "day" : "15",
+ "title": "Text",
+ "info": "Highlighting Text with mark"
+},
+ {
+ "inp": "24",
+"out" : "https://www.dropbox.com/s/658kv8guab5vmel/05%20-%20adding%20headings.mov?dl=0",
+ "day" : "16",
+ "title": "Text",
+ "info": "Adding Headings"
+},
+ {
+ "inp": "25",
+"out" : "https://www.dropbox.com/s/jqioltqvtek5bsu/06%20-%20using%20quotations%20and%20quote%20marks.mov?dl=0",
+ "day" : "17",
+ "title": "Text",
+ "info": "Using Quotations and Quote Marks"
+},
+ {
+ "inp": "26",
+"out" : "https://www.dropbox.com/s/1fdmxmoz7uqagvp/07%20-%20exploring%20preformatted%20text.mov?dl=0",
+ "day" : "18",
+ "title": "Text",
+ "info": "Exploring Preformatted Text"
+},
+ {
+ "inp": "27",
+"out" : "https://www.dropbox.com/s/h186pqun2vam3wn/08%20-%20formatting%20lists.mov?dl=0",
+ "day" : "18",
+ "title": "Text",
+ "info": "Formating Lists"
+},
+ {
+ "inp": "28",
+"out" : "https://www.dropbox.com/s/yr9d1bced9hggil/09%20-%20forcing%20text%20direction.mov?dl=0",
+ "day" : "19",
+ "title": "Text",
+ "info": "Forcing text direction"
+},
+ {
+ "inp": "29",
+"out" : "7",
+ "day" : "20",
+ "title": "Image",
+ "info": "Using Image"
+},
+ {
+ "inp": "30",
+"out" : "7",
+ "day" : "21",
+ "title": "Link",
+ "info": "Understanding URLs"
+},
+ {
+ "inp": "31",
+"out" : "7",
+ "day" : "22",
+ "title": "Link",
+ "info": "Work with hyperlinks"
+},
+ {
+ "inp": "01",
+"out" : "7",
+ "day" : "23",
+ "title": "Link",
+ "info": "Linking withing a page"
+},
+ {
+ "inp": "02",
+"out" : "7",
+ "day" : "24",
+ "title": "Link",
+ "info": "Using imgae Links"
+},
+ {
+ "inp": "03",
+"out" : "7",
+ "day" : "25",
+ "title": "List",
+ "info": "Exploring List types"
+},
+ {
+ "inp": "04",
+"out" : "7",
+ "day" : "26",
+ "title": "List",
+ "info": "Using text Menu with Unordered List"
+},
+ {
+ "inp": "05",
+"out" : "7",
+ "day" : "27",
+ "title": "Project",
+ "info": "Building your First Webpage"
+},
+
+ {
+ "inp": "06",
+"out" : "7",
+ "day" : "28",
+ "title": "Closing Thought",
+ "info": "Good-bye"
+}
+
+]
